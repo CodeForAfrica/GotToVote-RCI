@@ -5,14 +5,13 @@ home: active
 ---
 <div class="alert alert-info alert-dismissible" role="alert">
   <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  <p class="text-info text-left"><b>Registration ends on 13th August 2014.</b>
-    All registration centres are open from 7:00am
-    to 6:00pm each day including Saturdays and Sunday.</p>
+  <p class="text-info text-left"><b>Registration ends on {{ site.registration_end_date }}.</b>
+    All registration centres are open from 7:00am to 6:00pm each day including Saturdays and Sunday.</p>
 </div>
 
 <div class="jumbotron" id="jumbotron">
   <h1>Register as a Voter Today!</h1>
-  <p class="lead">Voter registration for the Ghana 2016 Elections has begun.
+  <p class="lead">Voter registration for the {{ site.country }} {{ site.election_year }} Elections has begun.
     Find a voter registration centre and register to vote.</p>
   <p><a class="btn btn-large btn-success" href="#" id="findlink" onclick="$('#find').scrollTop();">Find a Registration Centre</a></p>
 </div>
