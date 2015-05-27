@@ -25,12 +25,15 @@ var centre_name = new Array();
 
 
 //Fusion Table Variables
+
 var json_result;
 
 var get_url = "https://www.googleapis.com/fusiontables/v1/query?sql=";
 var sql_1 = encodeURIComponent("SELECT * FROM ");
 var sql_2 = encodeURIComponent(" WHERE Region_Code = "+county_code);
 var api_key = "&key={{ site.api_key }}";
+
+var table_id = "{{ site.table_id }}";
 
 county_sel.onchange = function () {
 
@@ -53,7 +56,7 @@ county_sel.onchange = function () {
 
 		county_code = county_sel.value;
 		sql_2 = encodeURIComponent(" WHERE Region_Code = "+county_code);
-		run_get_centres("1NMs_iAwYIZqdEBDVVuxA7nN4BQlvQwNAgevtPkYx");
+		run_get_centres(table_id);
 	}
 }
 
@@ -314,16 +317,15 @@ function run_get_centres(table_id) {
 }
 
 
-
-
-
 // On Window load
 
 window.onload = function() {
 
 }
 
+
 // Other Functions
+
 function toTitleCase(str)
 {
     return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
