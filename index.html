@@ -4,7 +4,7 @@ title: "Find Your Registration Centre"
 home: active
 ---
 <div class="alert alert-info alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
   <p class="text-info text-left"><b>Registration ends on {{ site.registration_end_date }}.</b>
     All registration centres are open from 7:00am to 6:00pm each day including Saturdays and Sunday.</p>
 </div>
@@ -13,7 +13,7 @@ home: active
   <h1>Register as a Voter Today!</h1>
   <p class="lead">Voter registration for the {{ site.country }} {{ site.election_year }} Elections has begun.
     Find a voter registration centre and register to vote.</p>
-  <p><a class="btn btn-large btn-success" href="#" id="findlink" onclick="$('#find').scrollTop();">Find a Registration Centre</a></p>
+  <p><a class="btn btn-large btn-success" href="#" id="findlink" onclick="javascript:goToByScroll('findlink');">Find a Registration Centre</a></p>
 </div>
 
 <hr />
@@ -49,10 +49,10 @@ home: active
 <hr />
 
 
-<div id="find-reg" style="text-align: center;">
+<div id="find-reg" class="text-center">
 <h2>Find A Registration Centre!</h2>
 
-  <div class="row marketing" style="margin-top: 20px; margin-bottom: 10px;">
+  <div class="row marketing" style="margin-top: 20px;">
     <div class="col-md-4">
       <div>
         <p class="lead">Region</p>
