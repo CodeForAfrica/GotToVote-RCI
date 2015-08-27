@@ -15,7 +15,7 @@ about: active
 			<footer>Emmanuel Okyere, <cite title="Source Title">Odekro</cite></footer>
 		</blockquote>
 
-		<p class="lead">GotToVote! Ghana is designed to help citizens find their nearest voter registration centre, so that they can ensure they are eligible to vote in the 2016 general election.</p>
+		<p class="lead">GotToVote! {{ site.country }} is designed to help citizens find their nearest voter registration centre, so that they can ensure they are eligible to vote in the {{ site.election_year }} general election.</p>
 
 		<p>This website, which is optimised for easy mobile access, explains who is eligible to register and gives an overview of the voter registration process. It also tells users what documentation to take with them to register, and helps users easily find their nearest voter registration center.</p>
 
@@ -25,37 +25,13 @@ about: active
 
 		<p>Future versions of the site will introduce SMS tools, and will help users verify their registration, find their balloting stations, and track their local election results.</p>
 
-		<p>GotToVote! Ghana is not a government website. It was instead built by local social justice watchdog <a href="http://www.odekro.org/info/odekro-overview" target="_blank"> Odekro</a> and the continental open data incubator, <a href="http://www.codeforafrica.org">Code for Africa</a> , in partnership with the new Code for Ghana hub in Accra.</p>
+		<p>GotToVote! {{ site.country }} is not a government website. It was instead built by local social justice watchdog <a href="http://www.odekro.org/info/odekro-overview" target="_blank"> Odekro</a> and the continental open data incubator, <a href="http://www.codeforafrica.org">Code for Africa</a> , in partnership with the new Code for Ghana hub in Accra.</p>
 
 		<p>This project took just two days and $500 to execute. All the cleaned-up data and source materials used to power this website are available, free-of-charge, for you to reuse on your own projects.</p>
 
-		<p>This GotToVote! Ghana collaboration is the first in a new partnership to create simple digital tools that empower Ghanaian citizens.</p>
+		<p>This GotToVote! {{ site.country }} collaboration is the first in a new partnership to create simple digital tools that empower Ghanaian citizens.</p>
 
 		<p><a href="mailto:info@codeforafrica.org">Contact us</a> if you'd like our help to build other exciting citizen tools.</p>
-
-
-		<h4>For the Geeks: What GotToVote! Fixes</h4>
-
-		<p>Management of Ghana's voter registration data has been devolved to the districts, which means that there isn't a single standard or data schema.</p>
-
-		<p>"The lack of a standard schema was a challenge but, adding to this, not even the Electoral Commission's website has all the information. There are big holes in its data. This is a confusing nightmare for ordinary people, because they were expected to download a miss-mash of PDFs, MS Word or MS Excel documents, along with CSVs, to try find where they should register," explains Code for Africa's lead technologist, David Lemayian.</p>
-
-		<p>Lemayian and his counterparts at Odekro, Emmanuel Okyere and Nehemiah Attigah, therefore scraped source documents from all available sources and built a standard schema, reconciling often misspelled or missing data points and weeding out replications.</p>
-
-		<p>"A lot of the data, particularly for the Ashanti, Eastern, and Northern regions, were in .doc and .docx files. While most of this was in properly formatted tables, some Ashanti documents had really crazy tables that took forever to clean up and that made it difficult to write scrapers to extract the data into a Fusion Table," explains Okyere.</p>
-
-		<p>Many of the documents also included extraneous data, such as a list of "Unwieldy Electoral Areas", along with commentaries between Electoral Commission officials about the wisdom of creating additional registration centres because of the distances that voters would have to travel in rural areas to register. The recommendation doesn't appear to have been adopted.</p>
-
-		<p>Some of the data was also incomplete. The Ahenbronum electoral area in the Ashanti Region, for example, had no Designated Centre provided. And data for Brong Ahafo turned out to be same data for Volta region. Data for the Central region was not available at all. Regions like Volta were role models, with all their data cleanly formatted on separate spreadsheets within the same Excel workbook/file.</p>
-
-		<p>The <a href="http://www.ec.gov.gh/" target="_blank">Electoral Commission</a> was quick to help us when problems were identified, proving the potential for constructive and mutually beneficial partnerships between official agencies and civic technologists.</p>
-
-		<p>The Commission and its district agencies will be able to reuse the consolidated GotToVote! datasets.</p>
-
-		<p>What advice do we have for the Commission? Officials need to understand that data collection should NEVER be done in a word processing software like Word. Spreadsheets should be the minimum standard, with CSV being preferred but something like Excel is acceptable if nothing else is possible.</p>
-
-		<p>"Collaboration rocks! This entire project was done online, across time zones and 4,000km, with teams working in Ghana and Kenya. The Ghanians did all the data processing, at lightning speed, while the Kenyan team focused on setting up the site structure. It's amazing what we were able to achieve in just two days, at virtually no cost," says Lemayian.</p>
-
 
 		<h4>Where Does It Come From? GotToVote's History</h4>
 
@@ -79,18 +55,18 @@ about: active
 
 		<p>	Code for Africa is committed to help grow these resources and the global civic technology community, by making its <a href="https://github.com/CodeForAfrica" target="_blank">code</a> and <a href="http://africaopendata.org/" target="_blank">data</a> freely available. It is also committed to helping fellow African citizen agency organisations re-purpose and customise existing civic code as cost-effectively as possible.</p>
 
-		<p>The code for GotToVote! Ghana is available <a href="http://github.com/CodeForAfrica/GotToVote.Ghana" target="_blank">here</a>.</p>
+		<p>The code for GotToVote! {{ site.country }} is available <a href="http://github.com/CodeForAfrica/GotToVote-RCI.{{ site.country }}" target="_blank">here</a>.</p>
 
-		<p>All the data used by the Ghana project and other initiatives is available for free reuse on the <a href="http://openafrica.net/" target="_blank">openAFRICA.net</a> portal. It is already the continent's largest repository of public data, despite being volunteer run, and offers data ranging from government budget and tender information, to data about parliamentarians and other public officials.</p>
+		<p>All the data used by the {{ site.country }} project and other initiatives is available for free reuse on the <a href="http://openafrica.net/" target="_blank">openAFRICA.net</a> portal. It is already the continent's largest repository of public data, despite being volunteer run, and offers data ranging from government budget and tender information, to data about parliamentarians and other public officials.</p>
 
 
 		<br />
 		<p class="lead" style="text-align: center;"><b><em>We are Open!</em></b></p>
 		<p style="text-align: center;">
-			<a href="http://africaopendata.org/dataset/ghana-voter-registration-centres" style="text-align: center;" class="btn btn-lg btn-primary" target="_blank">
+			<a href="http://openafrica.net" style="text-align: center;" class="btn btn-lg btn-primary" target="_blank">
 				<i class="fa fa-database fa-lg"></i> Open Data
 			</a>
-			<a href="http://github.com/CodeForAfrica/GotToVote.Ghana" style="text-align: center;" class="btn btn-lg btn-default" target="_blank">
+			<a href="http://github.com/CodeForAfrica/GotToVote-RCI.{{ site.country }}" style="text-align: center;" class="btn btn-lg btn-default" target="_blank">
 				<i class="fa fa-github fa-lg"></i> Open Source
 			</a>
 		</p>
