@@ -28,7 +28,7 @@ var centre_name = [];
 
 var json_result;
 
-var get_url = "https://www.googleapis.com/fusiontables/v1/query?sql=";
+var get_url = "https://www.googleapis.com/fusiontables/v2/query?sql=";
 var sql_1 = encodeURIComponent("SELECT * FROM ");
 var sql_2 = encodeURIComponent(" WHERE Region_Code = " + county_code);
 var api_key = "&key={{ site.api_key }}";
