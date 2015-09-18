@@ -111,14 +111,27 @@ hr {
 }
 
 
-.partner-logos a {
-  margin: 10px;
-}
-.partner-logos a img {
-  height: 80px;
-}
-.partner-logos a:hover, .footer a:hover {
-  opacity: 0.6;
+.partner-logos {
+  a {
+    margin: 10px;
+    img {
+      height: 80px;
+    }
+    &:hover, &:focus{
+      opacity: 0.6;
+    }
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  p:nth-child(2) {
+    a img {
+      height: 60px;
+    }
+  }
+  
 }
 
 .supporting {
@@ -137,8 +150,12 @@ footer {
 
   a {
     margin: 5px;
+    img {
+      height: 40px;
+    }
+    &:hover, &:focus {
+      opacity: 0.6;
+    }
   }
-  img {
-    height: 40px;
-  }
+  
 }
