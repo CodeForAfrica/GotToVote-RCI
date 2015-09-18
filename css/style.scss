@@ -102,14 +102,6 @@ hr {
   text-align: center;
 }
 
-.social-icons {
-  text-align: center;
-  margin: 10px 0 20px;
-}
-.social-icons a {
-  margin: 10px;
-}
-
 
 .partner-logos {
   a {
@@ -134,12 +126,6 @@ hr {
   
 }
 
-.supporting {
-  text-align:left;
-}
-.implementing {
-  text-align:right;
-}
 
 footer {
   .about.bg-info {
@@ -158,4 +144,16 @@ footer {
     }
   }
   
+  .social-icons {
+    a {
+      color: #333;
+      margin: 0 5px;
+    }
+
+    img {
+      width: 50px;
+      height: auto;
+      margin: 0;
+    }
+  }
 }
