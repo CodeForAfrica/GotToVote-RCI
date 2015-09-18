@@ -28,21 +28,23 @@
 
   <!-- Add your site or application content here -->
 
-  <div class="container-narrow">
-    <div class="masthead">
+  <div class="header">
+    <div class="container-narrow">
       <ul class="nav nav-pills pull-right">
         <li class="{{ page.home }}"><a href="{{ site.baseurl }}/">Home</a></li>
         <li class="{{ page.about }}"><a href="{{ site.baseurl }}/about.html">About</a></li>
         <li><a href="http://gottovote.cc/" target="_blank" style="border: 2px solid; padding: 8px 13px;">GtV.cc</a></li>
       </ul>
-      <h1 class="pull-left" style="margin-top:5px;">
-        <a href="index.html"><img src="img/logo_2.png" alt="GotToVote Logo"></a>
-      </h1>
+      <!--<h3 class="muted">Got To Vote! Ke</h3>-->
+      <h2 class="text-muted">
+        <img src="/img/logo_2.png" alt="" class="logo"/>
+      </h2>
     </div>
+  </div>
+
+  <div class="container-narrow">
 
     <div class="clearfix"></div>
-
-    <hr style="margin-top: 20px; margin-bottom: 20px;"/>
 
     {{ content }}
 
@@ -62,9 +64,9 @@
 
     {% include partners.html %}
 
-    {% include footer.html %}
-
   </div>
+
+  {% include footer.html %}
 
   <!-- Scripts -->
 
