@@ -1,0 +1,114 @@
+---
+layout: default
+title: "Find Your Registration Centre"
+home: active
+
+custom_js: main
+---
+<!-- <div class="alert alert-info alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <p class="text-info text-left"><b>Registration ends on {{ site.registration_end_date }}.</b>
+    All registration centres are open from 7:00am to 6:00pm each day including Saturdays and Sunday.</p>
+</div> -->
+
+<div class="jumbotron" id="jumbotron">
+  <h1>Register as a Voter Today!</h1>
+  <p class="lead">Voter registration for the {{ site.country }} {{ site.election_year }} Elections has begun.
+    Find a voter registration centre and register to vote.</p>
+  <p><a class="btn btn-large btn-default" href="#" id="findlink" onclick="javascript:goToByScroll('findlink');">Find a Registration Centre</a></p>
+</div>
+
+<hr />
+
+<div class="row marketing">
+  <div class="col-sm-6">
+    <h4>What is voter registration?</h4>
+    <p>Voter registration is the process of entering details of qualified persons including their National Identity Card or Passport numbers in a register or list of voters.</p>
+
+    <h4>Who qualifies to register as a voter?</h4>
+    <p>In order to qualify as a voter, one must:</p>
+    <ul>
+      <li><p>Be a citizen of Ghana</p></li>
+      <li><p>Be 18 years old and above</p></li>
+    </ul>
+
+    <!-- <h4>Can a person transfer as a voter to another registration centre or constituency?</h4>
+    <p>A person may transfer as a voter to another registration centre within the electoral area or outside the electoral area. The person is required to present himself/ herself to the particular registration centre if he/she meets the requirements.</p> -->
+
+  </div>
+  <div class="col-sm-6">
+    <h4>Why register as a voter?</h4>
+    <p>Registering as a voter will give you the opportunity to elect leaders for your country at the national and county levels. You can only participate in elections if you are a registered voter. It is your right and duty as a responsible citizen to elect your leaders.</p>
+
+    <h4>Where can you register as a voter?</h4>
+    <p>You can register as a voter at any designated voter registration centres within the electoral area where you wish to vote.</p>
+
+    <!-- <h4>What is the role of a voter in ensuring the register is accurate?</h4>
+    <p>It is the responsibility of each registered voter to inspect the register and inform the registration officers of any corrections they wish made in the register of voters on their particulars.</p> -->
+  </div>
+</div>
+<a name="find" id="find"></a>
+<hr />
+
+
+<div id="find-reg" class="text-center">
+<h2>Find A Registration Centre!</h2>
+
+  <div class="row marketing" style="margin-top: 20px;">
+    <div class="col-md-4">
+      <div>
+        <p class="lead">Region</p>
+        <select id="county_select" class="form-control">
+          <option value="0">Select Region</option>
+          <option value="1">Accra</option>
+          <option value="2">Ashanti</option>
+          <option value="3">Central</option>
+          <option value="4">Eastern</option>
+          <option value="5">Northern</option>
+          <option value="6">Upper East</option>
+          <option value="7">Upper West</option>
+          <option value="8">Volta</option>
+          <option value="9">Western</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="text-align: center;">
+        <p class="lead">District</p>
+        <select id="const_select" class="form-control">
+          <option value="0">- Select a Region First -</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div style="text-align: center;" >
+        <p class="lead">Electoral Area</p>
+        <select id="ward_select" class="form-control">
+          <option value="0">- Select a Region First -</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="found-reg" style="display: none;">
+    <table class="table table-hover" style="margin-bottom: 0;">
+      <thead><tr><td>
+        <h4>Registration Centres in <span id="header-name">Region</span></h4>
+      </td></tr></thead>
+      <tbody id="reg-centres">
+      </tbody>
+    </table>
+    <table class="table table-hover" style="margin-bottom: 0;">
+      <thead><tr><td>
+        <h4>Other Polling Stations</h4>
+      </td></tr></thead>
+      <tbody id="other-centres">
+        <tr><td>
+          <p><img src="img/spinner.gif" alt="" />
+            Finding registration centres...
+          </p>
+        </td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
