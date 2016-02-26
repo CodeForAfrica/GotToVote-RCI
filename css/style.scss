@@ -13,11 +13,12 @@
 
 .header {
   padding-top: 10px;
-  padding-bottom: 100px;
-  background: #f4f4f4 url('../img/mountains2.png');
-  background-size: 100% auto;
+  padding-bottom: 300px;
+  background: #fff url("../img/mountains.jpg");
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
+  margin-bottom: -250px;
 
   .logo {
     height: 60px;
@@ -64,7 +65,7 @@
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  background-color: #fff;
+  background-color: transparent;
 
   h1 {
     font-size: 72px;
