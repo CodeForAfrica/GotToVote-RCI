@@ -27,13 +27,21 @@
   .nav-pills {
     & > li {
       & > a {
-        color: #666;
+        color: #5cb85c;
+        border-color: #4cae4c;
+        &:hover, &:focus {
+          background-color: #449d44;
+          border-color: #398439 !important;
+          color: #fff;
+        }
       }
       &.active > a{
-        background-color: #666;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
         color: #fff;
         &:hover, &:focus {
-          background-color: #666;
+          background-color: #449d44;
+          border-color: #398439 !important;
           color: #fff;
         }
       }
@@ -66,13 +74,6 @@
   .btn {
     font-size: 21px;
     padding: 14px 24px;
-    background-color: #666;
-    color: #fff;
-    border-color: #666;
-
-    &:hover, &:focus {
-      background-color: #333;
-    }
   }
 }
 
