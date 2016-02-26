@@ -44,8 +44,8 @@ county_sel.onchange = function () {
     if (county_sel.options[0].value == 0) {
       county_sel.remove(0);
     }
-    const_sel.innerHTML = "<option value=\"0\">Loading Districts... </option>";
-    ward_sel.innerHTML = "<option value=\"0\">Loading Electoral Areas...</option>";
+    const_sel.innerHTML = "<option value=\"0\">Loading Constituencies... </option>";
+    ward_sel.innerHTML = "<option value=\"0\">Loading Wards...</option>";
 
     header_name.innerHTML = unescape(toTitleCase(escape(county_sel.options[county_sel.selectedIndex].innerHTML))) + " Region";
 
@@ -136,7 +136,7 @@ const_sel.onchange = function () {
           "<tr><td><p>" + toTitleCase(centre_name[i]) + "</p></td></tr>");
     }
 
-    header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0]))) + " Electoral Area";
+    header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0]))) + " Ward";
   }
 };
 
