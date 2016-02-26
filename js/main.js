@@ -30,7 +30,7 @@ var json_result;
 
 var get_url = "https://www.googleapis.com/fusiontables/v2/query?sql=";
 var sql_1 = encodeURIComponent("SELECT * FROM ");
-var sql_2 = encodeURIComponent(" WHERE Region_Code = " + county_code);
+var sql_2 = encodeURIComponent(" WHERE 'County Code' = " + county_code);
 var api_key = "&key={{ site.api_key }}";
 
 var table_id = "{{ site.table_id }}";
@@ -55,7 +55,7 @@ county_sel.onchange = function () {
     $("#found-reg").slideDown('fast');
 
     county_code = county_sel.value;
-    sql_2 = encodeURIComponent(" WHERE Region_Code = " + county_code);
+    sql_2 = encodeURIComponent(" WHERE 'County Code' = " + county_code);
     run_get_centres(table_id);
   }
 };
@@ -301,11 +301,6 @@ function run_get_centres(table_id) {
       for (var i = 0; i < ward_reg_code.length; i++) {
         $("#reg-centres").html($("#reg-centres").html() +
             "<tr><td><p>" + toTitleCase(ward_reg_name[i]) + "</p></td></tr>");
-      }
-      $("#other-centres").html("");
-      for (var i = 0; i < centre_code.length; i++) {
-        $("#other-centres").html($("#other-centres").html() +
-            "<tr><td><p>" + toTitleCase(centre_name[i]) + "</p></td></tr>");
       }
 
       header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0]))) + " Electoral Area";
