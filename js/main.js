@@ -184,7 +184,7 @@ ward_sel.onchange = function () {
           "<tr><td><p>" + toTitleCase(centre_name[i]) + "</p></td></tr>");
     }
 
-    header_name.innerHTML = unescape(toTitleCase(escape(ward_sel.options[ward_sel.selectedIndex].text))) + " Electoral Area";
+    header_name.innerHTML = unescape(toTitleCase(escape(ward_sel.options[ward_sel.selectedIndex].text))) + " Ward";
   }
 };
 
@@ -303,7 +303,7 @@ function run_get_centres(table_id) {
             "<tr><td><p>" + toTitleCase(ward_reg_name[i]) + "</p></td></tr>");
       }
 
-      header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0]))) + " Electoral Area";
+      header_name.innerHTML = unescape(toTitleCase(escape(ward_name[0]))) + " Ward";
 
     }
   };
