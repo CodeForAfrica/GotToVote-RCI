@@ -13,11 +13,12 @@
 
 .header {
   padding-top: 10px;
-  padding-bottom: 100px;
-  background: #f4f4f4 url('../img/mountains2.png');
-  background-size: 100% auto;
+  padding-bottom: 300px;
+  background: #fff url("../img/mountains.jpg");
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
+  margin-bottom: -250px;
 
   .logo {
     height: 60px;
@@ -27,13 +28,21 @@
   .nav-pills {
     & > li {
       & > a {
-        color: #666;
+        color: #5cb85c;
+        border-color: #4cae4c;
+        &:hover, &:focus {
+          background-color: #449d44;
+          border-color: #398439 !important;
+          color: #fff;
+        }
       }
       &.active > a{
-        background-color: #666;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
         color: #fff;
         &:hover, &:focus {
-          background-color: #666;
+          background-color: #449d44;
+          border-color: #398439 !important;
           color: #fff;
         }
       }
@@ -56,7 +65,7 @@
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  background-color: #fff;
+  background-color: transparent;
 
   h1 {
     font-size: 72px;
@@ -66,13 +75,6 @@
   .btn {
     font-size: 21px;
     padding: 14px 24px;
-    background-color: #666;
-    color: #fff;
-    border-color: #666;
-
-    &:hover, &:focus {
-      background-color: #333;
-    }
   }
 }
 
