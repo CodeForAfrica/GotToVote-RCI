@@ -10,6 +10,8 @@ table_id: "1CSlnHwpe8qTpBAoSiwZAAH7PVbV0w9kRkvUypmXP"
 
 google_analytics: 'UA-36749298-1'
 
+openafrica_url: 'http://africaopendata.org/dataset/voter-registration-2016'
+
 # ------------------------------------------------------------------------------
 # Jekyll Config
 
