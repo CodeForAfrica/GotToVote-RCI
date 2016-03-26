@@ -8,6 +8,9 @@ registration_end_date: "-"
 api_key: "AIzaSyAwvkIls5mQybyp2R3g4FGiVetNdeVjUeE"
 table_id: "1CSlnHwpe8qTpBAoSiwZAAH7PVbV0w9kRkvUypmXP"
 
+url: https://rci.gottovote.cc   # with the https protocol
+enforce_ssl: rci.gottovote.cc   # without any protocol
+
 google_analytics: 'UA-36749298-1'
 
 openafrica_url: 'http://africaopendata.org/dataset/voter-registration-2016'
