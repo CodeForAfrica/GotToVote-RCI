@@ -10,6 +10,13 @@
   <meta name="description" content="Find the registration centre nearest to you.">
   <meta name="viewport" content="width=device-width">
   <meta property="og:image" content="/img/logo_2.png"/>
+  
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <script type="text/javascript">
+    var host = "{{ site.enforce_ssl }}";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
